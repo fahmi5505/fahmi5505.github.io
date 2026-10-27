@@ -1,288 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fahmi's portfolio — Computer Science, software development and data engineering.">
-  <title>Fahmi | Developer Portfolio</title>
-  <style>
-    :root {
-      --bg: #080d18;
-      --panel: #101a2b;
-      --text: #e8f0ff;
-      --muted: #9aabc4;
-      --accent: #38bdf8;
-      --border: #24334a;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: Inter, system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(1080px, 90%);
-      margin: auto;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo { font-weight: 800; letter-spacing: 2px; }
-    .logo span, .accent { color: var(--accent); }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .nav-links a:hover, .text-link:hover { color: var(--accent); }
-
-    .hero { padding: 110px 0 100px; }
-
-    .eyebrow {
-      color: var(--accent);
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: clamp(44px, 8vw, 78px);
-      line-height: 1.12;
-      letter-spacing: -3px;
-      margin: 20px 0;
-    }
-
-    .hero p, .section-intro {
-      max-width: 620px;
-      color: var(--muted);
-    }
-
-    .actions { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-
-    .btn {
-      padding: 12px 20px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      display: inline-block;
-      transition: .2s;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #07111f;
-      border-color: var(--accent);
-      font-weight: 700;
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    section { padding: 65px 0; }
-
-    h2 { font-size: 30px; margin-bottom: 12px; }
-    .section-intro { margin-bottom: 30px; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-    }
-
-    .card h3 { margin-bottom: 10px; }
-    .card p { color: var(--muted); font-size: 14px; }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tag {
-      padding: 8px 13px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font-size: 14px;
-    }
-
-    .project-link {
-      display: inline-block;
-      color: var(--accent);
-      margin-top: 18px;
-      font-size: 14px;
-    }
-
-    .contact-card { text-align: center; padding: 45px 24px; }
-    .contact-card p { margin: 12px auto 24px; }
-
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 24px 0;
-      text-align: center;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    @media (max-width: 700px) {
-      .grid { grid-template-columns: 1fr; }
-      .hero { padding: 75px 0; }
-      .nav-links { gap: 12px; font-size: 12px; }
-      h1 { letter-spacing: -2px; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { transition: none !important; }
-    }
-  </style>
+  <title>My SCST1133 E-Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="container">
+  <header>
+    <h1>Your Name</h1>
+    <p>SCST1133 Data Engineering Ecosystem</p>
     <nav>
-      <a class="logo" href="#home">FAHMI<span>.DEV</span></a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <a href="#about">About</a>
+      <a href="#work">Selected Work</a>
+      <a href="#reflection">Reflection</a>
     </nav>
   </header>
 
   <main>
-    <section class="container hero" id="home">
-      <div class="eyebrow">Computer Science Student</div>
-      <h1>Hi, I'm Fahmi.<br>
-        <span class="accent">I build things.</span>
-      </h1>
-      <p>
-        I'm a Computer Science student passionate about software
-        development, data analysis, automation and solving problems
-        through technology.
-      </p>
-      <div class="actions">
-        <a class="btn btn-primary" href="#projects">Explore My Work ↘</a>
-        <a class="btn" href="#contact">Get In Touch</a>
-      </div>
+    <section id="about">
+      <h2>Professional Profile</h2>
+      <p>Write a short professional introduction here.</p>
     </section>
 
-    <section class="container" id="about">
-      <h2>About Me<span class="accent">.</span></h2>
-      <p class="section-intro">
-        I enjoy learning how technology works and turning ideas into
-        practical solutions. Currently strengthening my programming,
-        Git, GitHub and software engineering fundamentals.
-      </p>
+    <section id="work">
+      <h2>Selected Work</h2>
+      <article>
+        <h3>Design Thinking and Figma</h3>
+        <img src="images/project-screenshot.png"
+             alt="Screenshot of my Figma prototype">
+        <p>Explain the artifact and your contribution.</p>
+      </article>
     </section>
 
-    <section class="container" id="skills">
-      <h2>Tech Stack<span class="accent">.</span></h2>
-      <p class="section-intro">Tools and languages I'm learning and using.</p>
-      <div class="tag-list">
-        <span class="tag">Python</span>
-        <span class="tag">C++</span>
-        <span class="tag">Java</span>
-        <span class="tag">SQL</span>
-        <span class="tag">Git</span>
-        <span class="tag">GitHub</span>
-        <span class="tag">Linux</span>
-        <span class="tag">VS Code</span>
-        <span class="tag">HTML & CSS</span>
-      </div>
-    </section>
-
-    <section class="container" id="projects">
-      <h2>Featured Projects<span class="accent">.</span></h2>
-      <p class="section-intro">
-        A selection of projects I'm building and exploring.
-      </p>
-      <div class="grid">
-        <article class="card">
-          <h3>01. Data Analysis</h3>
-          <p>A project exploring datasets, data cleaning and useful insights.</p>
-          <a class="project-link"
-             href="https://github.com/fahmi5505"
-             target="_blank" rel="noopener noreferrer">
-            View repository ↗
-          </a>
-        </article>
-
-        <article class="card">
-          <h3>02. Python Automation</h3>
-          <p>Small scripts designed to automate repetitive tasks and workflows.</p>
-          <a class="project-link"
-             href="https://github.com/fahmi5505"
-             target="_blank" rel="noopener noreferrer">
-            View repository ↗
-          </a>
-        </article>
-
-        <article class="card">
-          <h3>03. Algorithm Practice</h3>
-          <p>Programming exercises focused on logic, algorithms and data structures.</p>
-          <a class="project-link"
-             href="https://github.com/fahmi5505"
-             target="_blank" rel="noopener noreferrer">
-            View repository ↗
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section class="container" id="contact">
-      <div class="card contact-card">
-        <h2>Let's Connect<span class="accent">.</span></h2>
-        <p class="section-intro">
-          Open to learning opportunities, collaboration and interesting
-          software projects.
-        </p>
-        <div class="actions" style="justify-content:center">
-          <a class="btn btn-primary"
-             href="mailto:fahmi-07@graduate.utm.my">Email Me</a>
-          <a class="btn"
-             href="https://github.com/fahmi5505"
-             target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a class="btn"
-             href="https://www.linkedin.com/in/ahmad-fahmi-bin-mohd-fakharuddin-b776a8443/"
-             target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        </div>
-      </div>
+    <section id="reflection">
+      <h2>Course Reflection</h2>
+      <p>Explain what you learned and what you would improve.</p>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      © <span id="year"></span> Fahmi. Built with HTML & CSS.
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+  <footer><p>© 2026 Your Name</p></footer>
 </body>
 </html>
